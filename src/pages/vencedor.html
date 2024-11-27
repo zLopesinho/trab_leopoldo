@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Tela de Vencedor</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/vencedor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<body>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+      <button
+        class="navbar-toggle"
+        onclick="toggleNavbar()"
+      >
+        ☰
+      </button>
+      <div class="navbar-links">
+        <a
+          href="home.html"
+          class="nav-link"
+          >Home</a
+        >
+        <a
+          href="sobre.html"
+          class="nav-link"
+          >Sobre o Projeto</a
+        >
+        <a
+          href="feedback.html"
+          class="nav-link"
+          >Feedback</a
+        >
+        <a
+          href="highscores.html"
+          class="nav-link"
+          >Pontuação</a
+        >
+        <a
+          href="profile.html"
+          class="nav-link"
+          >Perfil</a
+        >
+        <a
+          href="#"
+          id="logoutButton"
+          class="nav-link"
+          >Logout</a
+        >
+      </div>
+    </nav>
+
+    <!-- Quadro de Vencedor -->
+    <div class="info_box winner_box">
+        <div class="info-title">🎉 Parabéns ao Vencedor! 🎉</div>
+        <div class="info-list">
+            <p class="info"><strong>Nome do Vencedor:</strong> <span id="winner-name">Carregando...</span></p>
+            <p class="info"><strong>Ultima Pontuação:</strong> <span id="winner-score">Carregando...</span> pontos</p>
+            <p class="info">Você alcançou a pontuação mais alta! Continue assim para manter o recorde.</p>
+        </div>
+        <div class="buttons">
+            <button class="register_btn" onclick="window.location.href='highscores.html'">Ver Mais Pontuações</button>
+            <button class="register_btn" id="twitterShareButton">
+                <i class="fab fa-twitter"></i> Compartilhar no Twitter
+            </button>
+            
+            <!-- WhatsApp share button with icon -->
+            <button class="register_btn" id="whatsappShareButton">
+                <i class="fab fa-whatsapp"></i> Compartilhar no WhatsApp
+            </button>
+
+        </div>
+        
+    </div>
+
+    
+
+    <script src="../javascript/vencedor.js"></script>
+
+    <!-- Alternativa: Links de compartilhamento para Twitter e Facebook -->
+    
+
+</body>
+</html>

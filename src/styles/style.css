@@ -1,0 +1,196 @@
+/* Importando fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    background-color: #007bff;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Poppins, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+::selection {
+    color: #fff;
+    background: #007bff;
+}
+
+/* Barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .nav-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #0263ca;
+}
+
+/* Estilos para a caixa de informações */
+.info_box {
+    width: 90%;
+    max-width: 610px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    text-align: center;
+}
+
+.info_box .info-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.info_box .info-list {
+    font-size: 1.7rem;
+    line-height: 1.6;
+}
+
+.info_box .info {
+    margin-bottom: 10px;
+}
+
+.info_box .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.info_box .buttons button {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login_btn {
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #007bff;
+}
+
+.register_btn {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.login_btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.register_btn:hover {
+    background-color: #0263ca;
+}
+.navbar-toggle {
+    display: none;
+}
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #007bff;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+
+    .navbar .nav-link {
+        font-size: 16px;
+        margin: 0 15px;
+    }
+
+    .info_box .info-title {
+        font-size: 2rem;
+    }
+
+    .info_box .info-list {
+        font-size: 1.5rem;
+    }
+
+    .info_box .buttons button {
+        font-size: 1.4rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar .nav-link {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .info_box {
+        top: 50%;
+        padding: 20px;
+    }
+
+    .info_box .info-title {
+        font-size: 1.8rem;
+    }
+
+    .info_box .info-list {
+        font-size: 1.4rem;
+    }
+
+    .info_box .buttons button {
+        font-size: 1.2rem;
+        padding: 6px 12px;
+    }
+}
+
+
+

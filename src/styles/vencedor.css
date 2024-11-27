@@ -1,0 +1,22 @@
+/* Estilos específicos para a tela de vencedor */
+.winner_box {
+    max-width: 700px;
+    padding: 40px;
+}
+
+.winner_box .info-title {
+    font-size: 2.8rem;
+    color: #0263ca;
+    margin-bottom: 25px;
+}
+
+.winner_box .info-list .info {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.winner_box .buttons button {
+    font-size: 1.6rem;
+    background-color: #0263ca;
+    color: #fff;
+}

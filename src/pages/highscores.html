@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Maiores Pontuações - Incrível Quiz</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/highscores.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../public/favicon.ico"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Top 5 Maiores Pontuações</h1>
+
+      <!-- Seção para exibir a última pontuação do jogador -->
+      <div class="last-score">
+        <h2>Sua Última Pontuação</h2>
+        <p id="last-score-text">Carregando...</p>
+      </div>
+
+      <ul id="highscores-list">
+        <!-- As pontuações serão inseridas aqui via JavaScript -->
+      </ul>
+      <a
+        href="../pages/home.html"
+        class="btn"
+        >Home</a
+      >
+    </div>
+
+    <script src="../javascript/highscores.js"></script>
+  </body>
+</html>

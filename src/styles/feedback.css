@@ -1,0 +1,186 @@
+/* Importação de fontes e estilo geral */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Poppins, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .nav-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #0263ca;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #007bff;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+
+    .navbar .nav-link {
+        font-size: 16px;
+        margin: 0 15px;
+    }
+
+    .info_box .info-title {
+        font-size: 2rem;
+    }
+
+    .info_box .info-list {
+        font-size: 1.5rem;
+    }
+
+    .info_box .buttons button {
+        font-size: 1.4rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar .nav-link {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .info_box {
+        top: 50%;
+        padding: 20px;
+    }
+
+    .info_box .info-title {
+        font-size: 1.8rem;
+    }
+
+    .info_box .info-list {
+        font-size: 1.4rem;
+    }
+
+    .info_box .buttons button {
+        font-size: 1.2rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Estilo da seção de feedback */
+.feedback-section {
+    max-width: 600px;
+    margin: 100px auto 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feedback-section h1 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+}
+
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+#feedbackMessage {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #007bff;
+}
+
+body {
+    background-color: #007bff; /* Fundo azul */
+    min-height: 100vh; /* Garante que o fundo cubra toda a altura da página */
+    padding-top: 70px; /* Espaço para a navbar fixa */
+}

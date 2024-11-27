@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback do Jogo</title>
+    <link rel="stylesheet" href="../styles/feedback.css">
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+        <div class="navbar-links">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="sobre.html" class="nav-link">Sobre o Projeto</a>
+            <a href="feedback.html" class="nav-link">Feedback</a>
+            <a href="highscores.html" class="nav-link">Pontuação</a>
+            <a href="profile.html" class="nav-link">Perfil</a>
+        </div>
+    </nav>
+
+    <!-- Formulário de feedback -->
+    <section class="feedback-section">
+        <h1>Nos dê seu Feedback!</h1>
+        <form id="feedbackForm">
+            <label for="experience">Como você avalia sua experiência no jogo?</label>
+            <select id="experience" name="experience" required>
+                <option value="" disabled selected>Escolha uma opção</option>
+                <option value="excelente">Excelente</option>
+                <option value="bom">Bom</option>
+                <option value="regular">Regular</option>
+                <option value="ruim">Ruim</option>
+            </select>
+
+            <label for="difficulty">Como você avalia a dificuldade do jogo?</label>
+            <select id="difficulty" name="difficulty" required>
+                <option value="" disabled selected>Escolha uma opção</option>
+                <option value="muito-facil">Muito fácil</option>
+                <option value="facil">Fácil</option>
+                <option value="medio">Médio</option>
+                <option value="dificil">Difícil</option>
+                <option value="muito-dificil">Muito difícil</option>
+            </select>
+
+            <label for="improvements">O que você gostaria de ver melhorado no jogo?</label>
+            <textarea id="improvements" name="improvements" rows="4" placeholder="Escreva suas sugestões"></textarea>
+
+            <label for="enjoyment">Você se divertiu jogando?</label>
+            <select id="enjoyment" name="enjoyment" required>
+                <option value="" disabled selected>Escolha uma opção</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <button type="submit" class="submit-btn">Enviar Feedback</button>
+        </form>
+        <p id="feedbackMessage"></p>
+    </section>
+
+    <script src="../javascript/feedback.js"></script>
+</body>
+</html>

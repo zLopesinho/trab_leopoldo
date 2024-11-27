@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Cadastro</title>
+    <link
+      rel="stylesheet"
+      href="../../styles/Cadastro/cadastro.css"
+    />
+    <style>
+      /* Estilos básicos para mensagens de erro */
+      .error-message {
+        color: red;
+        font-size: 0.9em;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="../home.html" class="nav-link">Home</a>
+      <a href="../sobre.html" class="nav-link">Sobre o Projeto</a>
+      <a href="../feedback.html" class="nav-link">Feedback</a>
+      <a href="../highscores.html" class="nav-link">Pontuação</a>
+      <a href="../profile.html" class="nav-link">Perfil</a>
+  </nav>
+    <div class="login-container">
+      <h1>CADASTRO</h1>
+      <form id="signup-form">
+        <div class="input-group">
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Digite seu nome"
+            required
+          />
+          <small
+            id="name-error"
+            class="error-message"
+          ></small>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu email"
+            required
+          />
+          <small
+            id="email-error"
+            class="error-message"
+          ></small>
+        </div>
+        <div class="input-group">
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Digite sua senha"
+            required
+          />
+          <small
+            id="password-error"
+            class="error-message"
+          ></small>
+        </div>
+        <button
+          type="submit"
+          class="btn-logar"
+          id="submit-button"
+          <!--
+          Adicionado
+          id
+          para
+          seleção
+          no
+          JS
+          --
+        >
+          Cadastrar
+        </button>
+      </form>
+    </div>
+    <script src="../../javascript/Cadastro/cadastro.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+/* highscores.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #007bff;
+  color: #333333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* Fundo branco */
+  border-radius: 10px;        /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+h1 {
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.last-score {
+  background-color: #f8f9fa;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.last-score h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+#last-score-text {
+  font-size: 18px;
+  color: #333333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  align-items: center;
+  position: relative;
+}
+
+li.current-user {
+  background-color: #d1ecf1; /* Azul claro */
+  border-color: #0c5460; /* Azul escuro */
+}
+
+li.current-user .badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.rank {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.name {
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.score {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.top-icon {
+  font-size: 1.5em;
+  color: gold;
+  margin-left: 10px;
+}

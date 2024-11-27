@@ -1,0 +1,157 @@
+/* Estilos básicos */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: Poppins, Helvetica, sans-serif;
+    background-color: #007bff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+} 
+
+.profile-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+.profile-item {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.profile-item label {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .nav-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #0263ca;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #007bff;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+}
+
+/* Botão Home */
+.home-button {
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #007bff;
+}
+
+.home-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilos para os botões dentro do profile-container */
+.profile-container button {
+    font-size: 1.4rem; /* Reduzi o tamanho da fonte */
+    font-weight: 500;
+    padding: 8px 16px; /* Reduzi o padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 5px; /* Adicionado margin para melhor espaçamento */
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Estilos específicos para os botões de redes sociais */
+.register_btn {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.register_btn:hover {
+    background-color: #0263ca;
+}
+
+.register_btn i {
+    margin-right: 5px;
+    font-size: 1.6rem; /* Ajuste do tamanho do ícone */
+}
+
+/* Ajuste do container dos botões para melhor alinhamento */
+.profile-container .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+
+/* Estilos para responsividade */
+@media (max-width: 768px) {
+    .profile-container button {
+        font-size: 1.2rem;
+        padding: 6px 12px;
+    }
+
+    .register_btn i {
+        font-size: 1.4rem;
+    }
+}

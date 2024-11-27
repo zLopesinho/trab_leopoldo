@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/profile.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Perfil do Jogador</title>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+        <div class="navbar-links">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="sobre.html" class="nav-link">Sobre o Projeto</a>
+            <a href="feedback.html" class="nav-link">Feedback</a>
+            <a href="highscores.html" class="nav-link">Pontuação</a>
+            <a href="#" id="logoutButton" class="nav-link">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="main-container">
+        <!-- Seção de Login/Cadastro -->
+        <div id="loginPrompt" class="profile-container" style="display: none;">
+            <h2>Bem-vindo!</h2>
+            <p>Para acessar seu perfil, faça login ou cadastre-se.</p>
+            <button onclick="window.location.href='home.html'" class="home-button">Ir para a Home</button>
+        </div>
+
+        <!-- Seção do Perfil -->
+        <div id="profileSection" class="profile-container">
+            <h2>Perfil do Jogador</h2>
+            <div class="profile-info">
+                <div class="profile-item">
+                    <label>Nome:</label>
+                    <span id="playerName">Carregando...</span>
+                </div>
+                <div class="profile-item">
+                    <label>Email:</label>
+                    <span id="playerEmail">Carregando...</span>
+                </div>
+                <div class="profile-item">
+                    <label>Última Pontuação:</label>
+                    <span id="playerScore">Carregando...</span>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="register_btn" onclick="window.location.href='highscores.html'">Ver Mais Pontuações</button>
+                <button class="register_btn" id="twitterShareButton">
+                    <i class="fab fa-twitter"></i> Compartilhar no Twitter
+                </button>
+                
+                <!-- WhatsApp share button with icon -->
+                <button class="register_btn" id="whatsappShareButton">
+                    <i class="fab fa-whatsapp"></i> Compartilhar no WhatsApp
+                </button>
+    
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="../javascript/profile.js"></script>
+</body>
+</html>
